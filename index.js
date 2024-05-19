@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Made by 54zjl"]
+const statusMessages = ["This bot is used for moderation and is inspired by melonly."]
 
 
 let currentIndex = 0;

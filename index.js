@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["This bot is used for moderation. If you would like to add this bot to your own server here is the invite link: https://discord.com/oauth2/authorize?client_id=1233195919336538126&scope=applications.commands%20bot&permissions=8."]
+const statusMessages = [" "]
 
 
 let currentIndex = 0;

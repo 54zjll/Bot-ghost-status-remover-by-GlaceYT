@@ -36,10 +36,7 @@ app.listen(port, () => {
 });
 
 
-client.user.setActivity("Chicago Roleplay", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/ggcrpdc"
-});
+const statusMessages = [" "]
 
 
 let currentIndex = 0;

@@ -72,16 +72,10 @@ function updateStatusAndSendMessages() {
   const currentStatus = statusMessages[currentIndex];
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
-client.on("ready", () =>{
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
-            name: "discord.gg/crpdc",  // The message shown
-            type: "WATCHING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
- });
+  client.user.setPresence({
+    activities: [{ name: currentStatus, type: ActivityType.Custom}],
+    status: 'dnd',
+  });
 
   
   const textChannel = client.channels.cache.get(channelId);
